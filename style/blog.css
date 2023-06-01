@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.clr {
+  clear: both;
+}
+/* navbar */
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.logo img {
+  width: 200px;
+}
+.logo {
+  float: left;
+}
+.menu {
+  float: right;
+  padding-top: 15px;
+}
+.menu ul li {
+  float: left;
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+}
+/* *************drop menu*********** */
+.drop-menu {
+  padding-top: 15px;
+  position: absolute;
+  display: none;
+  right: 5%;
+}
+.drop-menu .drop-down li {
+  list-style: none;
+}
+.main-link {
+  padding-left: 20px;
+}
+.drop-menu .drop-down li a {
+  text-decoration: none;
+  color: #fff;
+}
+.dropdown-link {
+  padding-top: 22px;
+  visibility: hidden;
+}
+.dropdown-link li {
+  padding: 15px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.main-link:hover + .dropdown-link {
+  visibility: visible;
+}
+.dropdown-link:hover {
+  visibility: visible;
+}
+/* ******up btn************ */
+.up-btn {
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+}
+/* ***************error******************** */
+.error {
+  padding: 100px 20px;
+}
+/************** footer section more info **********************/
+footer .more-info {
+  background-color: #403d38;
+  padding: 80px 0;
+}
+.more-info h5 {
+  color: white;
+}
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #777676;
+  margin: 8px 0;
+  margin-left: -12px;
+  opacity: 0.4;
+}
+.about {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+.about p {
+  color: #777676;
+  font-size: 12px;
+  padding-top: 15px;
+  padding-left: 8px;
+}
+.special {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+.ul-more-info {
+  list-style-type: "> ";
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.ul-more-info li {
+  color: #777676;
+  font-size: 12px;
+}
+.opening {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+
+.detils {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+  position: relative;
+}
+.wall {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/contact-details-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+/************** footer section social medi **********************/
+
+footer .social-media {
+  background-color: #353330;
+  padding: 50px 0;
+  text-align: center;
+}
+.social-media p {
+  color: #777676;
+  padding: 20px 0;
+}
+/************** media query **********************/
+@media screen and (max-width: 850px) {
+  .menu {
+    display: none;
+  }
+  .drop-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    margin-left: -70px;
+  }
+}
+
+/* ********larg screen********** */
+@media screen and (max-width: 997px) {
+  .about {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .special {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .opening {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .detils {
+    width: 50%;
+    padding-top: 20px;
+  }
+}
+
+/************** medium screen **********************/
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+  .info {
+    padding: 0 0;
+    padding-top: 40px;
+    width: 100%;
+  }
+  .about {
+    padding: 0 0;
+    width: 100%;
+  }
+  .special {
+    width: 100%;
+    padding: 0 0;
+    padding-top: 20px;
+  }
+  .opening {
+    width: 100%;
+    padding: 0 0;
+    padding-top: 20px;
+  }
+  .detils {
+    width: 100%;
+    padding: 0 0;
+    padding-top: 20px;
+  }
+}

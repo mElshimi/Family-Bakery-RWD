@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.clr {
+  clear: both;
+}
+/* navbar */
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.logo img {
+  width: 200px;
+}
+.logo {
+  float: left;
+}
+.menu {
+  float: right;
+  padding-top: 15px;
+}
+.menu ul li {
+  float: left;
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+}
+.menu ul li a:hover {
+  color: #8f7854;
+}
+/* ************* drop menu*********** */
+.drop-menu {
+  padding-top: 15px;
+  position: absolute;
+  display: none;
+  right: 5%;
+}
+.drop-menu .drop-down li {
+  list-style: none;
+}
+.main-link {
+  padding-left: 20px;
+}
+.drop-menu .drop-down li a {
+  text-decoration: none;
+  color: white;
+}
+.dropdown-link {
+  padding-top: 22px;
+  visibility: hidden;
+}
+.dropdown-link li {
+  padding: 15px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.main-link:hover + .dropdown-link {
+  visibility: visible;
+}
+.dropdown-link:hover {
+  visibility: visible;
+}
+/* ****** up btn ************ */
+.up-btn {
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+}
+/********************* home ****************/
+.home {
+  background-image: url(..//images/drew-coffman-1872.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+  text-align: center;
+}
+.caption {
+  padding-top: 200px;
+  color: white;
+}
+.caption h3 {
+  font-size: 25px;
+}
+.caption h1 {
+  font-size: 60px;
+  padding: 10px 0;
+}
+.caption p {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.caption a {
+  text-decoration: none;
+  color: white;
+}
+.lm {
+  background-color: #8e7754;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.cu {
+  border: solid white 2px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+.lm:hover,
+.cu:hover {
+  background-color: #fff;
+  color: #000;
+}
+/************** who are **********************/
+.who-are {
+  margin: 150px 0;
+  /* background-color: antiquewhite; */
+}
+.who-img {
+  width: 50%;
+  float: left;
+}
+.who-img img {
+  width: 100%;
+}
+.who-info {
+  width: 50%;
+  float: right;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+.who-info h3 {
+  margin-bottom: 20px;
+}
+.who-info p {
+  padding: 15px 0;
+}
+.i {
+  float: left;
+  padding-top: 7px;
+}
+.dis {
+  float: left;
+  padding-left: 10px;
+}
+/************** our location **********************/
+/* .our-location{
+    background-color: aqua; 
+} */
+.location-img {
+  width: 50%;
+  float: right;
+}
+.location-img img {
+  width: 100%;
+}
+.location-info {
+  width: 50%;
+  float: left;
+  padding-right: 50px;
+  margin-top: 130px;
+}
+.location-info p {
+  padding: 10px 0;
+}
+/************** our baking **********************/
+
+.our-baking {
+  margin: 150px 0;
+  text-align: center;
+}
+.our-baking .container p {
+  margin-top: 10px;
+}
+.item {
+  width: calc(100% / 3);
+  float: left;
+  padding: 40px 15px;
+}
+.item img {
+  width: 100%;
+}
+/************** contact **********************/
+
+.contact {
+  margin-bottom: 150px;
+}
+.contact-ifrm {
+  width: 50%;
+  float: right;
+}
+.contact-ifrm iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+.contact-info {
+  width: 50%;
+  float: left;
+  margin-top: 70px;
+  padding-right: 50px;
+}
+.contact-info h6 {
+  padding: 15px 0;
+}
+.contact-info p {
+  padding: 15px 0;
+}
+/************** footer section more info **********************/
+footer .more-info {
+  background-color: #403d38;
+  padding: 80px 0;
+}
+.more-info h5 {
+  color: white;
+}
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #777676;
+  margin: 8px 0;
+  margin-left: -12px;
+  opacity: 0.4;
+}
+.about {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+.about p {
+  color: #777676;
+  font-size: 12px;
+  padding-top: 15px;
+  padding-left: 8px;
+}
+.special {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+.ul-more-info {
+  list-style-type: "> ";
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.ul-more-info li {
+  color: #777676;
+  font-size: 12px;
+}
+.opening {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+}
+
+.detils {
+  width: 25%;
+  float: left;
+  padding: 0 25px;
+  position: relative;
+}
+.wall {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/contact-details-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+/************** footer section social medi **********************/
+
+footer .social-media {
+  background-color: #353330;
+  padding: 50px 0;
+  text-align: center;
+}
+.social-media p {
+  color: #777676;
+  padding: 20px 0;
+}
+
+/************** media query **********************/
+@media screen and (max-width: 850px) {
+  .menu {
+    display: none;
+  }
+  .drop-menu {
+    display: block;
+  }
+}
+/* ********larg screen********** */
+@media screen and (max-width: 997px) {
+  .about {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .special {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .opening {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .detils {
+    width: 50%;
+    padding-top: 20px;
+  }
+}
+/************** medium screen **********************/
+@media screen and (max-width: 768px) {
+  .who-img {
+    width: 100%;
+  }
+  .who-info {
+    width: 100%;
+    padding: 0 0;
+  }
+  .location-img {
+    width: 100%;
+  }
+  .location-info {
+    width: 100%;
+    padding: 0 0;
+  }
+  .item {
+    width: 100%;
+  }
+  .contact-ifrm {
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .about {
+    padding: 0 0;
+    width: 100%;
+  }
+  .special {
+    width: 100%;
+    padding: 0 0;
+    padding-top: 20px;
+  }
+  .opening {
+    width: 100%;
+    padding: 0 0;
+    padding-top: 20px;
+  }
+  .details {
+    width: 100%;
+    padding: 0 0;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    margin-left: -70px;
+  }
+}
